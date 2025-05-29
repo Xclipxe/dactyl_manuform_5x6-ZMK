@@ -78,13 +78,13 @@
 
         raise_layer {
             bindings = <
-&bootloader  &bt BT_SEL 0   &bt BT_SEL 1    &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                   &trans    &trans    &trans  &trans     &trans    &to 0
-&trans       &bt BT_DISC 0  &bt BT_DISC 1   &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4                  &trans    &trans    &trans  &trans     &none     &none
-&trans       &bt BT_CLR     &bt BT_CLR_ALL  &bt BT_NXT     &bt BT_PRV     &trans                         &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp UP    &none
-&trans       &trans         &trans          &trans         &trans         &trans                         &kp X     &trans    &trans  &trans     &kp DOWN  &kp RIGHT
-                            &trans          &trans                                                                           &trans  &kp LEFT
-                                                           &trans         &trans                         &trans    &trans
-                                                                          &trans         &trans  &trans  &trans
+&bootloader  &bt BT_SEL 0   &bt BT_SEL 1    &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                   &trans            &trans    &trans  &trans     &trans    &to 0
+&trans       &bt BT_DISC 0  &bt BT_DISC 1   &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4                  &trans            &trans    &trans  &trans     &none     &none
+&trans       &bt BT_CLR     &bt BT_CLR_ALL  &bt BT_NXT     &bt BT_PRV     &trans                         &kp LEFT          &kp DOWN  &kp UP  &kp RIGHT  &kp UP    &none
+&trans       &trans         &trans          &trans         &trans         &trans                         &kp X             &trans    &trans  &trans     &kp DOWN  &kp RIGHT
+                            &trans          &trans                                                                                   &trans  &kp LEFT
+                                                           &trans         &trans                         &trans            &trans
+                                                                          &trans         &trans  &trans  &kp LEFT_COMMAND
                                                                           &trans         &trans  &to 0   &to 0
             >;
         };
